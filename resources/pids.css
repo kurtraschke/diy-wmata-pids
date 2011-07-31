@@ -1,0 +1,128 @@
+body {
+    font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 62.5%;
+    background: black;
+    color: white;
+
+}
+
+#stationname {
+    font-size: 5em;
+    padding-bottom: 0.5em;
+}
+
+table {
+    font-size: 6em;
+}
+
+.dest {
+    font-size: 0.7em;
+    white-space: nowrap;
+}
+
+td:not(:first-child) {
+    padding-left: 0.8em;
+}
+
+td:not(:last-child) {
+    padding-right: 0.8em;
+}
+
+#incidentcontainer {
+    position:absolute;
+    bottom: 1em;
+    width: 100%;
+}
+
+#lines {
+    float: left;
+    padding-top: 0.25em;
+    padding-right: 0.25em;
+    font-size: 4.5em;
+}
+
+#incidents {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 1;
+    position: relative;
+    overflow: hidden;
+    height: 6em;
+}
+
+#incidents li {
+    position: absolute;
+    top: -999em;
+    left: 0;
+    display: block;
+    white-space: nowrap;
+    padding-top: 0.25em;
+    font-size: 4.5em;
+}
+
+#incidents li .lines {
+    display: none;
+}
+
+.flash {
+    color: red;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: fader;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-duration: 2s;
+    -moz-animation-name: fader;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+
+}
+  
+@-webkit-keyframes fader {
+    from {
+        opacity: 1.0
+    }
+    
+    70% {
+        opacity: 1.0
+    }
+
+    to {
+        opacity: 0.6
+    }
+}
+
+@-moz-keyframes fader {
+    from {
+        opacity: 1.0
+    }
+    
+    70% {
+        opacity: 1.0
+    }
+
+    to {
+        opacity: 0.6
+    }
+}
+
+.gr {
+    color: #009D57;
+}
+
+.rd {
+    color: #E94333;
+}
+
+.bl {
+    color: #0D7BBA;
+}
+
+.or {
+    color: #F89038;
+}
+
+.yl {
+    color: #FDE310;
+}
