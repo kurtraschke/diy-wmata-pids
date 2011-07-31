@@ -1,0 +1,8 @@
+Copy config-default.js to config.js.
+
+Open config.js in a text editor, and follow the directions in the
+comments.
+
+Open pids.html in a browser.  The display will auto-size, but only on
+page load. If you full-screen the browser, you'll need to reload the
+page in order for the display to resize.
