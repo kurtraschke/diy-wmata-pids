@@ -108,21 +108,21 @@ td:not(:last-child) {
 }
 
 .gr {
-    color: green;
+    color: #009D57;
 }
 
 .rd {
-    color: red;
+    color: #E94333;
 }
 
 .bl {
-    color: blue;
+    color: #0D7BBA;
 }
 
 .or {
-    color: orange;
+    color: #F89038;
 }
 
 .yl {
-    color: yellow;
+    color: #FDE310;
 }
