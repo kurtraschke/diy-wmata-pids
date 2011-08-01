@@ -28,6 +28,10 @@ td:not(:last-child) {
     padding-right: 0.8em;
 }
 
+td:last-child {
+    padding-right: 0.2em;
+}
+
 #incidentcontainer {
     position:absolute;
     bottom: 1em;
