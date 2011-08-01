@@ -72,7 +72,7 @@ function initializeDisplay(apikey, rtu, numtrains) {
                   doUpdatePred();
                   intervalIDPred = setInterval(doUpdatePred, 20*SECOND);
 
-	          $("#incidents").marquee({yScroll: "bottom", pauseSpeed: 1000, scrollSpeed: 10, pauseOnHover: false,
+	          $("#incidents").marquee({yScroll: "bottom", pauseSpeed: 1500, scrollSpeed: 10, pauseOnHover: false,
                                            beforeshow: function ($marquee, $li) {
                                                var lines = $li.find(".lines");
 				               $("#lines").html(lines.html()).fadeIn(1000);
