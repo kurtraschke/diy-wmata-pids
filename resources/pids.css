@@ -6,9 +6,18 @@ body {
 
 }
 
+#header {
+    padding-bottom: 0.5em;
+}
+
 #stationname {
     font-size: 5em;
-    padding-bottom: 0.5em;
+}
+
+#wx {
+    float: right;
+    text-align: right;
+    font-size: 2.5em;
 }
 
 table {

@@ -58,8 +58,9 @@ function initializeDisplay(apikey, rtu, numtrains) {
 
     $.getJSON(url,
               function(data) {
-                  var rtus, SECOND, doUpdatePred, doUpdateIncidents, intervalIDPred, intervalIDIncidents;
+                  var rtus, SECOND, MINUTE, doUpdatePred, doUpdateIncidents, intervalIDPred, intervalIDIncidents;
                   SECOND = 1000;
+                  MINUTE = 60;
 
                   rtus = [rtu];
 
@@ -85,6 +86,11 @@ function initializeDisplay(apikey, rtu, numtrains) {
                   doUpdateIncidents = function(){updateIncidents(apikey);};
                   doUpdateIncidents();
                   intervalIDIncidents = setInterval(doUpdateIncidents, 120*SECOND);
+
+                  getwx();
+                  intervalIDWeather = setInterval(getwx, 30*MINUTE*SECOND);
+
+
               });
 }
 

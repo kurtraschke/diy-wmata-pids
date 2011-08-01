@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="config.js"></script>
+<script src="resources/wx.js"></script>
 <script src="resources/pids.js"></script>
 <script src="resources/jquery.marquee.min.js"></script>
 <link rel="stylesheet" href="resources/reset.css">
@@ -13,7 +14,9 @@
 
 <body>
 <div id="container">
-<div id="stationname">Station Name</div>
+<div id="header">
+<div id="wx"><span class="temp">00 ºF</span><br /><span class="obs">Weather Observation</span></div>
+<div id="stationname">Station Name Here</div>
 <table id="predictions">
 <thead>
   <tr><td>LN</td><td>CAR</td><td>DEST</td><td>MIN</td></tr>
