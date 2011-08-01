@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
+<meta>
+    <author>kurt@kurtraschke.com</author>
+    <documentationURL>None</documentationURL>
+    <sampleQuery>select * from {table} where id=3</sampleQuery>
+  </meta>
+  <bindings>
+   <select itemPath="stations.station" produces="XML">
+      <urls>
+        <url env="all">http://www.capitalbikeshare.com/stations/bikeStations.xml</url>
+      </urls>
+    </select>
+  </bindings>
+</table>
